@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 3 Session info | A Minimal Book Example</title>
+<meta name="author" content="John Doe">
+<meta name="description" content="sessioninfo::session_info(include_base = TRUE) #&gt; - Session info ------------------------------------------- #&gt; setting value #&gt; version R version 4.1.2 (2021-11-01) #&gt; os    Windows 10 x64 (build...">
+<meta name="generator" content="bookdown 0.24.11 with bs4_book()">
+<meta property="og:title" content="Chapter 3 Session info | A Minimal Book Example">
+<meta property="og:type" content="book">
+<meta property="og:description" content="sessioninfo::session_info(include_base = TRUE) #&gt; - Session info ------------------------------------------- #&gt; setting value #&gt; version R version 4.1.2 (2021-11-01) #&gt; os    Windows 10 x64 (build...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 3 Session info | A Minimal Book Example">
+<meta name="twitter:description" content="sessioninfo::session_info(include_base = TRUE) #&gt; - Session info ------------------------------------------- #&gt; setting value #&gt; version R version 4.1.2 (2021-11-01) #&gt; os    Windows 10 x64 (build...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">A Minimal Book Example</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> About</a></li>
+<li><a class="" href="hello-bookdown.html"><span class="header-section-number">2</span> Hello bookdown</a></li>
+<li><a class="active" href="session-info.html"><span class="header-section-number">3</span> Session info</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="session-info" class="section level1" number="3">
+<h1>
+<span class="header-section-number">3</span> Session info<a class="anchor" aria-label="anchor" href="#session-info"><i class="fas fa-link"></i></a>
+</h1>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">sessioninfo</span><span class="fu">::</span><span class="fu"><a href="https://r-lib.github.io/sessioninfo/reference/session_info.html">session_info</a></span><span class="op">(</span>include_base <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+<span class="co">#&gt; - Session info -------------------------------------------</span>
+<span class="co">#&gt;  setting  value</span>
+<span class="co">#&gt;  version  R version 4.1.2 (2021-11-01)</span>
+<span class="co">#&gt;  os       Windows 10 x64 (build 22000)</span>
+<span class="co">#&gt;  system   x86_64, mingw32</span>
+<span class="co">#&gt;  ui       RTerm</span>
+<span class="co">#&gt;  language (EN)</span>
+<span class="co">#&gt;  collate  English_United Kingdom.1252</span>
+<span class="co">#&gt;  ctype    English_United Kingdom.1252</span>
+<span class="co">#&gt;  tz       Europe/Berlin</span>
+<span class="co">#&gt;  date     2022-03-12</span>
+<span class="co">#&gt;  pandoc   2.17.1.1 @ C:/Program Files/RStudio/bin/quarto/bin/ (via rmarkdown)</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; - Packages -----------------------------------------------</span>
+<span class="co">#&gt;  ! package     * version    date (UTC) lib source</span>
+<span class="co">#&gt;    base        * 4.1.2      2021-11-01 [?] local</span>
+<span class="co">#&gt;    bookdown      0.24.11    2022-03-12 [1] Github (rstudio/bookdown@7fd6224)</span>
+<span class="co">#&gt;    bslib         0.3.1      2021-10-06 [1] CRAN (R 4.1.1)</span>
+<span class="co">#&gt;    cachem        1.0.6      2021-08-19 [1] CRAN (R 4.1.1)</span>
+<span class="co">#&gt;    cli           3.2.0      2022-02-14 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;  P compiler      4.1.2      2021-11-01 [2] local</span>
+<span class="co">#&gt;  P datasets    * 4.1.2      2021-11-01 [2] local</span>
+<span class="co">#&gt;    digest        0.6.29     2021-12-01 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;    downlit       0.4.0.9000 2022-03-12 [1] local</span>
+<span class="co">#&gt;    evaluate      0.15       2022-02-18 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;    fastmap       1.1.0      2021-01-25 [1] CRAN (R 4.1.1)</span>
+<span class="co">#&gt;    fs            1.5.2      2021-12-08 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;  P graphics    * 4.1.2      2021-11-01 [2] local</span>
+<span class="co">#&gt;  P grDevices   * 4.1.2      2021-11-01 [2] local</span>
+<span class="co">#&gt;    htmltools     0.5.2      2021-08-25 [1] CRAN (R 4.1.1)</span>
+<span class="co">#&gt;    jquerylib     0.1.4      2021-04-26 [1] CRAN (R 4.1.1)</span>
+<span class="co">#&gt;    jsonlite      1.8.0      2022-02-22 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;    knitr         1.37.6     2022-03-12 [1] Github (yihui/knitr@d919733)</span>
+<span class="co">#&gt;    magrittr      2.0.2      2022-01-26 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;    memoise       2.0.1      2021-11-26 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;  P methods     * 4.1.2      2021-11-01 [2] local</span>
+<span class="co">#&gt;    R6            2.5.1.9000 2022-03-02 [1] local</span>
+<span class="co">#&gt;    rlang         1.0.2      2022-03-04 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;    rmarkdown     2.13.1     2022-03-12 [1] Github (rstudio/rmarkdown@1ef2cf3)</span>
+<span class="co">#&gt;    rstudioapi    0.13       2020-11-12 [1] CRAN (R 4.1.1)</span>
+<span class="co">#&gt;    sass          0.4.0      2021-05-12 [1] CRAN (R 4.1.1)</span>
+<span class="co">#&gt;    sessioninfo   1.2.2      2021-12-06 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;  P stats       * 4.1.2      2021-11-01 [2] local</span>
+<span class="co">#&gt;    stringi       1.7.6      2021-11-29 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;    stringr       1.4.0      2019-02-10 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;  P tools         4.1.2      2021-11-01 [2] local</span>
+<span class="co">#&gt;  P utils       * 4.1.2      2021-11-01 [2] local</span>
+<span class="co">#&gt;    xfun          0.30       2022-03-02 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;    xml2          1.3.3      2021-11-30 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt;    yaml          2.3.5      2022-02-21 [1] CRAN (R 4.1.2)</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt;  [1] C:/Users/IndrajeetPatil/Documents/R/win-library/4.1</span>
+<span class="co">#&gt;  [2] C:/Program Files/R/R-4.1.2/library</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt;  P -- Loaded and on-disk path mismatch.</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; ----------------------------------------------------------</span></code></pre></div>
+
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="hello-bookdown.html"><span class="header-section-number">2</span> Hello bookdown</a></div>
+<div class="empty"></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#session-info"><span class="header-section-number">3</span> Session info</a></li></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/01-intro.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>A Minimal Book Example</strong>" was written by John Doe. It was last built on 2022-03-12.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

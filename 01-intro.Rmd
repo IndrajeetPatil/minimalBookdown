@@ -1,0 +1,18 @@
+# Example
+
+bla
+
+## A section 
+
+bla bla
+
+### An unnumbered and unlisted section {.unlisted .unnumbered}
+
+bla bla bla
+
+## Session info
+
+```{r}
+sessioninfo::session_info(include_base = TRUE)
+```
+
